@@ -1,12 +1,15 @@
-export const REMOVE = "REMOVE"
-export const ADD = "ADD"
+export const ADD_FEATURE = 'ADD_FEATURE'
+export const addFeature = itemToAdd => {
+    return ({type: ADD_FEATURE, payload: itemToAdd})
+}
 
-const removeFeature = () => ({
-    // dispatch an action here to remove an item
-    type: REMOVE
-  });
+export const REMOVE_FEATURE = 'REMOVE_FEATURE'
+export const removeFeature = itemToRemove => {
+    return ({type: REMOVE_FEATURE, payload: itemToRemove})
+};
 
-  const buyItem = () => ({
-    // dipsatch an action here to add an item
-    type: ADD
-});
+
+export const BUY_ITEM = 'BUY_ITEM'
+const buyItem = item => {
+    return ({type:BUY_ITEM, payload:item})
+  };
