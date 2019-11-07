@@ -9,7 +9,7 @@ export const removeFeature = itemToRemove => {
 };
 
 
-export const BUY_ITEM = 'BUY_ITEM'
-const buyItem = item => {
-    return ({type:BUY_ITEM, payload:item})
-  };
+// export const BUY_ITEM = 'BUY_ITEM'
+// const buyItem = item => {
+//     return ({type:BUY_ITEM, payload:item})
+//   };
